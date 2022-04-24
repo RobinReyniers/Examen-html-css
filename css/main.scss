@@ -1,0 +1,1253 @@
+$primary-background-color: #002c89;
+$primary-text-color: white;
+$secondary-text-color: #002c89;
+
+/* General-----------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header-----------------------*/
+
+.header {
+  &__background {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__backgroundbig {
+    display: none;
+  }
+
+  &__buttonbig {
+    display: none;
+  }
+  &__herobig {
+    display: none;
+  }
+
+  &__hero {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__join {
+    color: $primary-text-color;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    padding: 3em 1.2em 0em;
+  }
+
+  &__beginner {
+    color: $primary-text-color;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    line-height: 40px;
+    padding: 0.5em;
+    font-weight: 600;
+    width: 80%;
+  }
+
+  &__certification {
+    color: $primary-text-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: "Manrope", sans-serif;
+    opacity: 0.7;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+    width: 80%;
+  }
+  &__buttoncontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    padding: 1em;
+    background-color: #002c89;
+    border-radius: 4px;
+    color: $primary-text-color;
+    width: 90%;
+    margin-top: 3em;
+  }
+}
+
+/* Get our best-suited React masterclass series-----------------------*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 1em;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #21455f;
+  }
+
+  &__description {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+    padding-bottom: 2em;
+  }
+
+  &__visual--container {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  &__content {
+    margin: 2em 0em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  &__accomodation {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2em 0em 3em;
+  }
+
+  &__accomodation::before {
+    content: "✅ ";
+  }
+
+  &__buttoncontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  &__button {
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+    padding: 1em;
+    width: 100%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.name {
+  font-family: "Manrope", sans-serif;
+  padding-left: 1em;
+}
+
+/* Become a React developer-----------------------*/
+
+.info {
+  background-color: #66daf92b;
+  padding: 3em 0;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 1em;
+    color: #21455f;
+  }
+
+  &__textwrapper {
+    padding: 0 1em;
+  }
+
+  &__rule {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 2em 0em;
+  }
+
+  &__rule--italic {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  &__content {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    padding: 1em 0em;
+    line-height: 19px;
+  }
+
+  &__visual {
+    background-image: url("/Images/IDE-img-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0px;
+    width: 100%;
+    height: 90vw;
+    display: block;
+    min-height: max-content;
+    margin-top: 2em;
+  }
+}
+
+/* This coding bootcamp is perfect for-----------------------*/
+
+.audience {
+  margin: 1em;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 1em 0.5em;
+    color: #21455f;
+  }
+
+  &__list {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3em 1em;
+    margin: 2em;
+    display: block;
+    opacity: 0.9;
+    line-height: 24px;
+  }
+
+  &__list--item {
+    padding-left: 0.5em;
+    list-style: "✅";
+  }
+
+  &__visual {
+    background-image: url("/Images/image-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 95vh;
+    width: 95vw;
+    display: block;
+  }
+}
+
+/* Who can opt for-----------------------*/
+
+.optfor {
+  background-color: #f9f9f9;
+  padding: 3em 1em;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #21455f;
+  }
+
+  &__description {
+    font-family: "Manrope", sans-serif;
+    line-height: 24px;
+    padding: 2em 0em;
+    opacity: 0.9;
+    line-height: 24px;
+  }
+  &__list {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    opacity: 0.7;
+    display: block;
+    line-height: 24px;
+  }
+
+  &__list--item {
+    margin: 1em;
+    padding-left: 0.5em;
+    list-style: "✅";
+  }
+}
+
+/* Let's have a breakthrough-----------------------*/
+
+.breakthrough {
+  background: $primary-background-color;
+  padding: 3em 1em;
+
+  &__heading {
+    color: $primary-text-color;
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+    padding: 1.5em 0em;
+    width: 80%;
+  }
+
+  &__description {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 1em;
+    color: $primary-text-color;
+  }
+
+  &__list {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $primary-text-color;
+    padding: 1em;
+    display: block;
+  }
+
+  &__list--item {
+    margin: 1em;
+    padding-left: 0.5em;
+    list-style: "✅";
+  }
+
+  &__listright {
+    display: none;
+  }
+}
+
+.article {
+  background-color: #00094c;
+
+  &__content {
+    color: $primary-text-color;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 2em 1em;
+  }
+}
+
+/* Course details-----------------------*/
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    color: $secondary-text-color;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__wrapup {
+    width: 85%;
+  }
+
+  &__wrapdown {
+    width: 85%;
+  }
+
+  &__content {
+    border: 2px solid $primary-background-color;
+    border-radius: 12px;
+    background-color: #0062ab08;
+    margin: 0.5em;
+    line-height: 30px;
+    max-height: 6em;
+    text-align: center;
+    width: 110%;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content--first {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $secondary-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content--second {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    color: $secondary-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    border: solid 1px #ffc702;
+    background-color: #ffc702;
+    padding: 0.8em 1em;
+    border-radius: 113px;
+    max-width: 6em;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+    margin: 1em 0em;
+  }
+
+  &__signup {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    color: #004b5f;
+    margin: 1em;
+  }
+
+  &__button {
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+    padding: 1em;
+    width: 100%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Requirements from attendants-----------------------*/
+.requirements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0em;
+  background-color: #66daf92b;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #21455f;
+    margin: 1em 0.5em;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+  }
+
+  &__article {
+    padding: 1em;
+    background-color: $primary-background-color;
+    border-radius: 8px 8px 0 0;
+    color: $primary-text-color;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  &__content {
+    background-color: #0062ab;
+    border-radius: 0 0 8px 8px;
+    color: $primary-text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+/* What makes us exquisite?-----------------------*/
+
+.exquisite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0em;
+  background-color: #66daf92b;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #21455f;
+    margin: 1em 0.5em;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__articleone {
+    border-radius: 12px;
+    margin: 1em;
+  }
+
+  &__articletwo {
+    border-radius: 12px;
+    margin: 1em;
+  }
+
+  &__contentone {
+    border: 3px solid $primary-background-color;
+    border-radius: 0 0 12px 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #004b5f;
+    padding: 1em;
+  }
+
+  &__nameone {
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+    border-radius: 12px 12px 0 0;
+    padding: 1.5em;
+  }
+
+  &__contenttwo {
+    border: 3px solid $primary-background-color;
+    border-radius: 0 0 12px 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #004b5f;
+    padding: 1em;
+  }
+
+  &__nametwo {
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+    border-radius: 12px 12px 0 0;
+    padding: 1.5em;
+  }
+}
+
+/* Get certified with Coding Course Brussels-----------------------*/
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 3em;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+    margin: 2em 0.5em 0.5em;
+    width: 80%;
+    color: #21455f;
+  }
+
+  &__content {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 1em;
+    opacity: 0.9;
+  }
+
+  &__subheading {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: $secondary-text-color;
+    padding: 3em 1.5em 1em;
+    text-align: center;
+  }
+
+  &__or {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 0.6em;
+    color: $secondary-text-color;
+  }
+
+  &__article {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+    padding: 2em;
+    border-radius: 8px;
+  }
+
+  &__button {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+    padding: 1em;
+    width: 70%;
+    border-radius: 4px;
+  }
+}
+
+/* Footer / Contact us-----------------------*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  background-color: #00094c;
+  height: 150%;
+  position: relative;
+
+  &__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+    color: $primary-text-color;
+    margin: 2em 0em 1em;
+  }
+
+  &__description {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $primary-text-color;
+    opacity: 0.9;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    margin-bottom: 375px;
+  }
+
+  &__iconcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: White;
+    max-width: 7em;
+    border-radius: 4px;
+    margin: 2em 0em;
+  }
+
+  &__icon {
+    position: relative;
+    padding: 1em;
+    max-width: 4em;
+  }
+
+  &__credentials {
+    display: flex;
+    flex-direction: column;
+    color: $primary-text-color;
+  }
+
+  &__credentials--info {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    margin-left: 1em;
+    opacity: 0.7;
+  }
+
+  &__visual img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 375px;
+    height: auto;
+    max-height: 375px;
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Header 1024px and up-----------------------*/
+  .header {
+    &__background {
+      display: none;
+    }
+
+    &__backgroundbig {
+      display: block;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-size: contain;
+      max-height: 100%;
+    }
+
+    &__hero {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      height: 100%;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 80%;
+      padding: 3em 0em 1em 5em;
+      text-align: left;
+    }
+
+    &__join {
+      width: 70%;
+      margin-top: 0.5em;
+      margin-left: 1.5%;
+    }
+
+    &__beginner {
+      width: 50%;
+      font-size: 64px;
+      line-height: 60px;
+    }
+
+    &__certification {
+      width: 50%;
+      margin-top: 1em;
+      margin-left: 1.5%;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__buttonbig {
+      display: block;
+      color: $secondary-text-color;
+      background-color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 4px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      width: 25%;
+    }
+  }
+
+  /* Get our best-suited React masterclass series! 1024px and up-----------------------*/
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    padding: 5em;
+    margin-top: 5em;
+
+    &__wrapperleft {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+    }
+
+    &__wrapperright {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding: 2em 0em 2em 3em;
+      border-left: 1px solid #e1e1e1;
+    }
+
+    &__heading {
+      line-height: 60px;
+      font-size: 48px;
+    }
+
+    &__description {
+      width: 50%;
+      line-height: 20px;
+    }
+
+    &__visual--container {
+      padding: 1em 2em;
+    }
+
+    &__visual {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 95%;
+    }
+
+    &__buttoncontainer {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__button {
+      width: 80%;
+    }
+  }
+
+  /* /* Become a React developer.  1024px and up-----------------------*/
+
+  .info {
+    display: flex;
+
+    &__heading {
+      font-size: 48px;
+    }
+
+    &__textwrapper {
+      padding: 3em;
+    }
+
+    &__content {
+      font-size: 18px;
+      width: 70%;
+      line-height: 30px;
+    }
+
+    &__strong {
+      font-weight: 700;
+    }
+
+    &__visual {
+      display: none;
+    }
+
+    &__visualbig {
+      background-image: url("/Images/IDE-img.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right 0px;
+      width: 70%;
+      height: 30vw;
+      display: block;
+      margin-top: 20%;
+    }
+  }
+
+  /* This coding bootcamp is perfect for. 1024px and up-----------------------*/
+
+  .audience {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+
+    &__visual {
+      display: none;
+    }
+
+    &__visualbig {
+      background-image: url("/Images/Group\ 47600.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left 0px;
+      width: 70%;
+      height: 60vw;
+      display: block;
+      min-height: max-content;
+      margin-top: 2em;
+    }
+
+    &__textwrapper {
+      margin-left: 4em;
+    }
+
+    &__heading {
+      font-size: 48px;
+      margin-top: 2em;
+      width: 70%;
+      line-height: 60px;
+    }
+
+    &__list {
+      padding-top: 0;
+    }
+
+    &__list--item {
+      padding: 1em;
+      font-size: 18px;
+    }
+  }
+
+  /* Who can opt for [name here] React Course? 1024px and up-----------------------*/
+
+  .optfor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8em;
+    max-width: 100%;
+
+    &__heading {
+      font-size: 48px;
+      width: 80%;
+    }
+
+    &__description {
+      font-size: 18px;
+      width: 90%;
+    }
+
+    &__list {
+      font-size: 20px;
+      width: 100%;
+    }
+
+    &__list--item {
+      padding: 1em;
+      width: 80%;
+    }
+  }
+
+  /* Let's Have A Breakthrough Of The Course. 1024px and up-----------------------*/
+
+  .breakthrough {
+    padding: 6em;
+
+    &__heading {
+      font-size: 48px;
+      line-height: 60px;
+      width: 55%;
+    }
+
+    &__description {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 2em;
+    }
+
+    &__listwrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &__list--item {
+      font-size: 18px;
+      width: 70%;
+    }
+
+    &__listright {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      color: $primary-text-color;
+      padding: 1em;
+      display: block;
+    }
+
+    &__listright--item {
+      font-size: 18px;
+      margin: 1em;
+      padding-left: 0.5em;
+      list-style: "✅";
+      width: 70%;
+    }
+  }
+
+  .article {
+    padding: 2em 11em;
+    text-align: center;
+  }
+
+  /* Course details. 1024px and up-----------------------*/
+
+  .details {
+    padding: 4em;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      width: 90%;
+    }
+
+    &__wrapup {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+    }
+
+    &__wrapdown {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+    }
+
+    &__price {
+      font-size: 36px;
+      padding: 0.3em;
+      width: 100%;
+    }
+
+    &__signup {
+      text-align: center;
+      width: 35%;
+    }
+
+    &__button {
+      width: 20%;
+    }
+  }
+
+  /* Requirements from attendants. 1024px and up-----------------------*/
+
+  .requirements {
+    padding: 5em;
+
+    &__heading {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__article {
+      padding: 2.5em;
+      font-size: 24px;
+      border-radius: 8px 0 0 8px;
+      width: 30%;
+    }
+
+    &__content {
+      border-radius: 0 8px 8px 0;
+      font-size: 24px;
+      width: 70%;
+      padding: 3em;
+    }
+  }
+
+  /* What makes us exquisite? 1024px and up-----------------------*/
+
+  .exquisite {
+    padding: 5em;
+
+    &__heading {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &__articleone {
+      margin: 0;
+    }
+
+    &__articletwo {
+      margin: 0;
+    }
+
+    &__nameone {
+      font-size: 28px;
+      border-radius: 8px 0 0 0;
+      height: 3.9em;
+    }
+
+    &__contentone {
+      padding: 3em;
+      font-size: 18px;
+      border-right: none;
+      border-radius: 0 0 0 8px;
+      height: 75%;
+    }
+
+    &__nametwo {
+      font-size: 28px;
+      border-radius: 0 8px 0 0;
+    }
+
+    &__contenttwo {
+      padding: 3em;
+      font-size: 18px;
+      border-radius: 0 0 8px 0;
+      height: 75.5%;
+    }
+  }
+
+  /* Get Certified with Coding Course Brussels. 1024px and up-----------------------*/
+
+  .certification {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+      font-size: 48px;
+      line-height: 60px;
+      text-align: center;
+      width: 55%;
+    }
+
+    &__content {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &__subheading {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 45px;
+      width: 55%;
+    }
+
+    &__articlewrapper {
+      display: flex;
+      margin-top: 4em;
+    }
+
+    &__or {
+      display: flex;
+      align-items: center;
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    &__article {
+      font-size: 22px;
+    }
+
+    &__button {
+      width: 30%;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
+  /* Footer/Contact us.  1024px and up-----------------------*/
+
+  .footer {
+    padding: 5em;
+
+    &__heading {
+      font-size: 48px;
+    }
+
+    &__description {
+      font-size: 18px;
+      width: 46%;
+    }
+
+    &__wrapper {
+      margin-top: 5em;
+    }
+
+    &__iconcontainer {
+      padding: 1em;
+    }
+
+    &__credentials--info {
+      font-size: 18px;
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  /* Header background picture 1150px and up-----------------------*/
+
+  .header {
+    &__background {
+      display: none;
+    }
+
+    &__backgroundbig {
+      display: block;
+      z-index: -1;
+      width: 100%;
+      height: 85%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-size: contain;
+    }
+  }
+}
